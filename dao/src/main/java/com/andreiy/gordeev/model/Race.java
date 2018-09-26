@@ -2,13 +2,22 @@ package com.andreiy.gordeev.model;
 
 public class Race {
 
-    private String raceName;
+    private int id;
+    private String name;
 
-    public String getRaceName() {
-        return raceName;
+    public int getId() {
+        return id;
     }
 
-    public void setRaceName(String raceName) {
-        this.raceName = raceName;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

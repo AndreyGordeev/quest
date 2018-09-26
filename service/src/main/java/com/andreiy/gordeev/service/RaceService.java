@@ -11,7 +11,11 @@ public class RaceService {
     @Autowired
     private RaceDAO raceDAO;
 
-    public Race getRace() {
-        return raceDAO.getRace();
+    public String getRaceList() {
+        StringBuilder stringBuilder = new StringBuilder("Races: ");
+        for (Race race : raceDAO.getRaceList()) {
+            stringBuilder.append(race.getName() + ", ");
+        }
+        return stringBuilder.delete(stringBuilder.length() - 2, stringBuilder.length()).append(".").toString();
     }
 }

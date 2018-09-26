@@ -4,7 +4,6 @@ import com.andreiy.gordeev.service.RaceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -14,8 +13,7 @@ public class RaceController {
     private RaceService raceService;
 
     @RequestMapping(value="/race", method=RequestMethod.GET)
-    public @ResponseBody
-    String getRace() {
-        return raceService.getRace().getRaceName();
+    public String getRace() {
+        return raceService.getRaceList();
     }
 }
