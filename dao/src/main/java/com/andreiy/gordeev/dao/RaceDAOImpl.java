@@ -22,7 +22,7 @@ public class RaceDAOImpl implements RaceDAO {
     }
 
     public List<Race> getRaceList() {
-        String sql = "SELECT * FROM race";
+        String sql = "SELECT * FROM Race";
         List<Race> raceList = jdbcTemplate.query(sql, new RowMapper<Race>() {
 
             public Race mapRow(ResultSet rs, int rowNum) throws SQLException {
