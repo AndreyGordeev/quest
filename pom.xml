@@ -10,61 +10,18 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>core</module>
         <module>dao</module>
         <module>service</module>
         <module>controller</module>
     </modules>
 
     <properties>
-        <javax.servlet>3.0</javax.servlet>
-        <spring.version>5.0.9.RELEASE</spring.version>
-        <javax.servlet>3.0.1</javax.servlet>
-        <jstl>1.2</jstl>
         <mysql.connector>5.1.6</mysql.connector>
         <flyway>5.0.3</flyway>
-
-        <database.driver>com.mysql.jdbc.Driver</database.driver>
-        <database.url>jdbc:mysql://localhost:12345/quest</database.url>
-        <database.username>root</database.username>
-        <database.password>root</database.password>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>${javax.servlet}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-web</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-jdbc</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>jstl</groupId>
-                <artifactId>jstl</artifactId>
-                <version>${jstl}</version>
-            </dependency>
-
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
