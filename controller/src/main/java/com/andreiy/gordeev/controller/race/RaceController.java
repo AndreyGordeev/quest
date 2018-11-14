@@ -1,6 +1,6 @@
-package com.andreiy.gordeev.controller;
+package com.andreiy.gordeev.controller.race;
 
-import com.andreiy.gordeev.service.RaceService;
+import com.andreiy.gordeev.service.race.RaceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

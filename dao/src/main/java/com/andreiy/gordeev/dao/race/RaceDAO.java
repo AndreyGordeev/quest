@@ -1,4 +1,4 @@
-package com.andreiy.gordeev.dao;
+package com.andreiy.gordeev.dao.race;
 
 import com.andreiy.gordeev.model.Race;
 

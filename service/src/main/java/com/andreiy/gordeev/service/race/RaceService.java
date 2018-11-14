@@ -1,6 +1,6 @@
-package com.andreiy.gordeev.service;
+package com.andreiy.gordeev.service.race;
 
-import com.andreiy.gordeev.dao.RaceDAO;
+import com.andreiy.gordeev.dao.race.RaceDAO;
 import com.andreiy.gordeev.model.Race;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
